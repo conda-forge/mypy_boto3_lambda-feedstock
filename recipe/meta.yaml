@@ -11,7 +11,7 @@ source:
   sha256: 23bd1e6eea94edc598bbeac05aa6946cd3625ddabd2592ff766f3ef8e889c5aa
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools
   run:
     - boto3
     - python >=3.6
