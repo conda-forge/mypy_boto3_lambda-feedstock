@@ -1,5 +1,5 @@
 {% set name = "mypy_boto3_lambda" %}
-{% set version = "1.35.58" %}
+{% set version = "1.35.66" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c6807363ee18579b3d6dff7c090f64b462a1f243be46fe6847333624e31ebbfc
+  sha256: 24e53d9290e24716f0c1fd351f405f41c55fb479871843971c1ad821d8b93684
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
