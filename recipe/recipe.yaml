@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: mypy_boto3_lambda
-  version: "1.43.46"
+  version: "1.43.47"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 98cd55c2f8995c19248dde4f044a492994830a8c95e951f6e9eaf3efc8092929
+  sha256: 21a153ce5318ab46c405d232e7cc8297be99d60f37f58471945b3813637a7a68
 
 build:
   number: 0
